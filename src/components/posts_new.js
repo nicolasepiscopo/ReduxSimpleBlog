@@ -26,9 +26,8 @@ class PostsNew extends Component {
 
         return (
             <div>
-                <h2>New Post</h2>
                 <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
-                    <h3>Create a new post</h3>
+                    <h2>Create a new post</h2>
                     <div className={`form-group ${this.hasDanger(title)}`}>
                         <label>Title</label>
                         <input type='text' className='form-control' {...title} />
